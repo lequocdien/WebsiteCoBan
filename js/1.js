@@ -52,7 +52,7 @@ function timKiemViTri(chuCaiCanTim){
 	}
 	return -1;
 }
-function EnciptCaesar(){
+function EncyptCaesar(){
 	key = document.getElementById("caesar_key").value;
 	key = Number(key);
 	plaintext = document.getElementById("caesar_plainttext").value;
@@ -76,5 +76,31 @@ function EnciptCaesar(){
 	}
 	ciphertext = ciphertext.join("");
 	document.getElementById("caesar_ciphertext").value = ciphertext;
+	
+}
+function DecryptCaesar(){
+	key = document.getElementById("caesar_key").value;
+	key = Number(key);
+	ciphertext = document.getElementById("caesar_ciphertext").value;
+	ciphertext = ciphertext.toLowerCase();
+	plaintext = new Array(ciphertext.length);
+	if(key == "" || ciphertext == ""){
+		alert("Chua co gia tri");
+	}
+	else{
+		for(let i = 0; i<ciphertext.length; i++){
+			if(ciphertext[i] == " "){
+				plaintext[i] = ciphertext[i];
+			}
+			else{
+				if(timKiemViTri(ciphertext[i]) == -1){
+					alert("Loi");
+				}
+				plaintext[i] = bangchucai[timKiemViTri(ciphertext[i])-key];
+			}
+		}
+	}
+	plaintext = plaintext.join("");
+	document.getElementById("caesar_plainttext").value = plaintext;
 	
 }
