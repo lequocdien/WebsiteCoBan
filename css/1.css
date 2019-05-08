@@ -15,7 +15,7 @@ body{
 h1,h2,h3,h4,h5,h6{
 	font-weight: 700;
 	padding:0px 0px 35px 0px;
-    margin: auto;
+	margin: 0px;
 }
 p{
 	color: #6c757d;
@@ -79,54 +79,7 @@ button.navbar-toggle {
     background-color: #FED136;
     color: white;
 }
-.navbar-collapse.navbar-ex1-collapse.collapse.in {
-    background: brown;
-}
-.nav{
-    background-color: black;
-}
-
-
-h1{
-    margin: auto;
-    display: block;
-}
-section{
-    background-color: white;
-    margin-top: 110px;
-    border: 5px solid black;
-    padding: 20px;
-}
-#caesar{
-    height: 500px;
-}
-input{
-    margin: 20px auto;
-    display: block;
-}
-button{
-    margin:10px auto;
-    display:block;
-}
-#playfair{
-    height: 700px;
-}
-#playfair_phai table{
-    margin: auto;
-}
-#playfair_phai input{
-    width: 50px;
-    margin: 0px;
-    border: 0px;
-}
-
-
-
-
-
-
-
-/* #header {
+#header {
     background-image: url(../images/header_bg.jpg);
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -135,9 +88,9 @@ button{
     width: 100%;
     min-height: 800px;
     display: table;
-} */
+}
 
-/* #header .header_table {
+#header .header_table {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
@@ -536,4 +489,4 @@ button.close {
 
 .modal h1 {
     padding: 0;
-} */
+}
